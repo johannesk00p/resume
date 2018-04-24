@@ -5,6 +5,7 @@ import { ExtraPage } from './../extra/extra';
 import { AboutPage } from './../about/about';
 import { ProjectPage } from './../project/project';
 import { ContactPage } from './../contact/contact';
+import { WelcomePage } from './../welcome/welcome';
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, Nav } from 'ionic-angular';
  
@@ -74,5 +75,8 @@ export class MenuPage {
     }
     return;
   }
+
+  signOut() {
+  	this.navCtrl.push(WelcomePage);}
  
 }
